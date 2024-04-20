@@ -1,0 +1,94 @@
+/* Write your CSS here */
+::-webkit-scrollbar {
+  display: none;
+}
+.bg-container {
+  background-color: #ffd569;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.operations-container {
+  border: 1px solid white;
+  border-radius: 7px;
+  background-color: white;
+  height: 96%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  padding: 10px;
+}
+.only-work-at-md-lg-xl-row-at_belowsize_centeringContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.line {
+  margin-top: 8px;
+  font-family: 'roboto';
+  text-align: center;
+  font-size: 22px;
+  color: #000000;
+  font-weight: 600;
+}
+.count {
+  color: #ffd569;
+}
+.pic {
+  height: 140px;
+  width: 140px;
+  margin-bottom: 9px;
+}
+.item-container {
+  /* border: 1px solid red; */
+  margin: 5px;
+  width: 51%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  background-color: rgb(61, 61, 255);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-family: 'roboto';
+  font-size: 13px;
+  font-weight: 400;
+  padding: 5px;
+}
+
+@media all and (min-width: 767px) {
+  .operations-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .only-work-at-md-lg-xl-row-at_belowsize_centeringContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .line {
+    font-size: 39px;
+  }
+  .pic {
+    height: 310px;
+    width: 310px;
+    margin-right: 14px;
+  }
+  .item-container {
+    width: 49%;
+  }
+  .button {
+    font-size: 27px;
+  }
+}
